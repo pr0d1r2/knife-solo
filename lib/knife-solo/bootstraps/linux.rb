@@ -102,7 +102,7 @@ module KnifeSolo::Bootstraps
         {:type => "omnibus"}
       when %r{openSUSE 1[23]}, %r{openSUSE Leap 42}
         {:type => "zypper_omnibus"}
-      when %r{This is \\n\.\\O \(\\s \\m \\r\) \\t}
+      when %r{This is \\n\.\\O \(\\s \\m \\r\) \\t}, %r{Gentoo/Linux}
         {:type => "emerge_gem"}
       when %r{Arch Linux}, %r{Manjaro Linux}
         {:type => "pacman"}
